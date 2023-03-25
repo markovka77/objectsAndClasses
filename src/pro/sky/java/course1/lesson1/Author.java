@@ -16,4 +16,5 @@ package pro.sky.java.course1.lesson1;
     public String getLastName(){
         return this.lastName;
     }
+
 }

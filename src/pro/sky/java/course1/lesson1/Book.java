@@ -1,5 +1,6 @@
 package pro.sky.java.course1.lesson1;
 
+
 class Book {
     String bookName;
     Author author;
@@ -15,6 +16,10 @@ class Book {
         return this.bookName;
     }
 
+    public Author getAuthor() {
+        return this.author;
+    }
+
     public int getPublishareYear(){
         return this.publishareYear;
     }
@@ -23,5 +28,6 @@ class Book {
         this.publishareYear = publishareYear;
 
     }
+
 
 }
