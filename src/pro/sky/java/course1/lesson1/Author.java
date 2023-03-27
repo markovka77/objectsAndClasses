@@ -1,6 +1,8 @@
 package pro.sky.java.course1.lesson1;
 
- class Author {
+import java.util.Objects;
+
+class Author {
     String name;
     String lastName;
 
@@ -17,4 +19,24 @@ package pro.sky.java.course1.lesson1;
         return this.lastName;
     }
 
+     @Override
+     public String toString() {
+         return "Author{" +
+                 "name='" + name + '\'' +
+                 ", lastName='" + lastName + '\'' +
+                 '}';
+     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Author author = (Author) o;
+        return Objects.equals(name, author.name) && Objects.equals(lastName, author.lastName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, lastName);
+    }
 }

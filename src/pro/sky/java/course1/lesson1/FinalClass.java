@@ -16,6 +16,9 @@ class Main {
         ispoved.setPublishareYear(2023);
         System.out.println(ispoved.getBookName()+" "+ esenin.getName()+" "+ esenin.getLastName()+ " "+ ispoved.getPublishareYear());
 
+        System.out.println();
+        System.out.println(oFishman);
+        System.out.println(ispoved);
     }
 
 
